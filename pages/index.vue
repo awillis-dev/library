@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h1>Add Book</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dicta
-      quibusdam quis commodi perferendis possimus illo hic, quia delectus
-      ducimus placeat, at eaque dolorem mollitia odio nulla soluta odit
-      temporibus.
-    </p>
+    <h2>Add Book</h2>
   </div>
 </template>
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  /* color: white; */
+}
+</style>
