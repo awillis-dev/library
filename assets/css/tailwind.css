@@ -13,14 +13,17 @@ body {
   }
 
   .submit-btn {
-    @apply flex bg-primary text-white px-6 py-3 rounded-md text-3xl;
+    @apply flex bg-green-400 text-white px-6 py-3 rounded-md text-3xl;
   }
 
-  /* .input {
-    @apply w-3 p-3;
-  } */
+  .input {
+    @apply px-6 py-4 m-3;
+  }
 
+  .checkbox {
+    @apply bg-gray-300 absolute top-0 left-0 h-6 w-6;
+  }
   .card {
-    @apply p-3 rounded-md bg-slate-800 shadow-md h-full;
+    @apply p-3 rounded-md bg-slate-800 shadow-md mx-auto my-auto flex flex-col;
   }
 }

@@ -10,7 +10,7 @@
     <input class="input" v-model="title" placeholder="Title" />
     <input class="input" v-model="author" placeholder="Author" />
     <input class="input" v-model="pages" placeholder="Pages" />
-    <input class="input" v-model="read" placeholder="Read?" type="checkbox" />
+    <input class="check" v-model="read" placeholder="Read?" type="checkbox" />
     <button class="submit-btn" @click="addBookToLibrary">Submit</button>
   </div>
 
