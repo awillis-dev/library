@@ -1,17 +1,19 @@
 <template>
-  <!-- ! AddBookButton -->
-  <AddBookButton @toggle="showForm = !showForm" />
-
-  <!-- ! AddBookForm -->
-  <div v-if="showForm">
-    <input v-model="title" placeholder="Title" />
-    <input v-model="author" placeholder="Author" />
-    <input v-model="pages" placeholder="Pages" />
-    <input v-model="read" placeholder="Read?" type="checkbox" />
-    <button @click="addBookToLibrary">Submit</button>
+  <div class="p-4 flex justify-center">
+    <button class="btn" @click="showForm = !showForm">
+      <i class="material-icons mr-2 my-1">add</i>
+      <span>Add Book</span>
+    </button>
   </div>
 
-  <!-- ! BookCard -->
+  <div class="card text-center" v-if="showForm">
+    <input class="input" v-model="title" placeholder="Title" />
+    <input class="input" v-model="author" placeholder="Author" />
+    <input class="input" v-model="pages" placeholder="Pages" />
+    <input class="input" v-model="read" placeholder="Read?" type="checkbox" />
+    <button class="submit-btn" @click="addBookToLibrary">Submit</button>
+  </div>
+
   <div v-for="book in myLibrary" :key="book.title">
     <h3>{{ book.title }}</h3>
     <p>Author: {{ book.author }}</p>
@@ -20,7 +22,7 @@
   </div>
 </template>
 
-<script seup>
+<script>
 export default {
   data() {
     return {
@@ -34,7 +36,7 @@ export default {
   },
   methods: {
     addBookToLibrary() {
-      if (this.title && this.author && this.pages && this.read) {
+      if (this.title && this.author && this.pages) {
         this.myLibrary.push({
           title: this.title,
           author: this.author,

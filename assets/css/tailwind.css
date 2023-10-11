@@ -12,7 +12,15 @@ body {
     @apply flex bg-primary text-white px-6 py-3 rounded-md text-3xl;
   }
 
+  .submit-btn {
+    @apply flex bg-primary text-white px-6 py-3 rounded-md text-3xl;
+  }
+
+  /* .input {
+    @apply w-3 p-3;
+  } */
+
   .card {
-    @apply p-3 rounded-md bg-white shadow-md h-full;
+    @apply p-3 rounded-md bg-slate-800 shadow-md h-full;
   }
 }
