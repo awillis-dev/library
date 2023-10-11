@@ -11,14 +11,12 @@
     <button @click="addBookToLibrary">Submit</button>
   </div>
 
-  <ul>
-    <li v-for="book in myLibrary" :key="book.title">
-      {{ book.title }}
-      {{ book.author }}
-      {{ book.pages }}
-      {{ book.read }}
-    </li>
-  </ul>
+  <div v-for="book in myLibrary" :key="book.title">
+    <h3>{{ book.title }}</h3>
+    <p>Author: {{ book.author }}</p>
+    <p>Pages: {{ book.pages }}</p>
+    <p>Read: {{ book.read ? "Yes" : "No" }}</p>
+  </div>
 </template>
 
 <script>
@@ -29,7 +27,7 @@ export default {
       showForm: false,
       title: "",
       author: "",
-      pages: 0,
+      pages: "",
       read: false,
     };
   },
