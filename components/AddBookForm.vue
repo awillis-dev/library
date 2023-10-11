@@ -1,6 +1,9 @@
 <template>
   <div class="p-4 flex justify-center">
-    <button @click="showForm = !showForm" class="btn">Add Book</button>
+    <button class="btn" @click="showForm = !showForm">
+      <i class="material-icons mr-2 my-1">add</i>
+      <span>Add Book</span>
+    </button>
   </div>
 
   <div v-if="showForm">

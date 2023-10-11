@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        primary: "#55adc5",
+      },
+    },
   },
   plugins: [],
 };
