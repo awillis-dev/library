@@ -1,15 +1,9 @@
 <template>
-  <div>
-    <h2>Add Book</h2>
+  <div class="container mx-auto p-4 flex justify-center">
+    <button class="btn">Add Book</button>
   </div>
 </template>
 
 <script setup></script>
 
-<style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  /* color: white; */
-}
-</style>
+<style scoped></style>

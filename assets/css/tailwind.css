@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-700;
+  /* @apply bg-[#102438]; */
+  @apply bg-slate-100;
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#55adc5] text-white px-3 py-2 rounded-md text-lg;
+  }
 }
