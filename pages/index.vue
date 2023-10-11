@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto p-4 flex justify-center">
-    <button class="btn">Add Book</button>
+  <div>
+    <AddBookForm></AddBookForm>
   </div>
 </template>
 

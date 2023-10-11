@@ -1,6 +1,34 @@
-# Nuxt 3 Minimal Starter
+# Odin Project - JS Library
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+```js
+const myLibrary = [];
+
+function Book(title, author, pages, read) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+}
+
+function addBookToLibrary(title, author, pages, read) {
+  const newBook = new Book(title, author, pages, read);
+  myLibrary.push(newBook);
+}
+
+addBookToLibrary("A Good Girl's Guide to Murder", "Holly Jackson", 400, true);
+addBookToLibrary("Good Girl, Bad Blood", "Holly Jackson", 420, true);
+addBookToLibrary("As Good As Dead", "Holly Jackson", 430, false);
+addBookToLibrary("Vicious", "V.E. Schwab", 370, true);
+addBookToLibrary("Vengeful", "V.E. Schwab", 480, true);
+
+function displayLibrary(myLibrary) {
+  myLibrary.forEach((book) => console.log(book));
+}
+
+displayLibrary(myLibrary);
+```
+
+---
 
 ## Setup
 
@@ -35,17 +63,3 @@ Locally preview production build:
 # npm
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
----
-
-## UI
-
-## Header Background
-
-`bg-[#FFFFFF]`
-
-### Body
-
-`bg-[#102438]`
